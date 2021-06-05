@@ -1,0 +1,266 @@
+.main-section {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.main-section .logo {
+  padding-top: 10px;
+}
+
+.main-section .logo span {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.main-section .menu {
+  padding-top: 15px;
+}
+
+.main-section .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.main-section .menu ul li {
+  position: relative;
+}
+
+.main-section .menu ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-section .menu ul li:hover > a {
+  border-bottom: 2px solid #fff;
+}
+
+.main-section .menu ul li a {
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+}
+
+.main-section .menu ul li a.active {
+  border-bottom: 2px solid #fff;
+}
+
+.main-section .menu ul li ul {
+  position: absolute;
+  width: 300px;
+  padding-top: 30px;
+  left: -133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.main-section .menu ul li ul li {
+  background: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.main-section .menu ul li ul li:hover a {
+  color: #1422e7;
+}
+
+.main-section .menu ul li ul li a {
+  color: #000;
+}
+
+.main-section .menu ul li ul li ul {
+  margin-left: 76px;
+  top: 0;
+}
+
+.main-section .menu ul li ul li ul li a {
+  padding-left: -5px;
+}
+
+.banner {
+  background: url(img/hero-bg.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 250px;
+  position: relative;
+}
+
+.banner .banner-contant h2 {
+  -webkit-animation: type 5s steps(9);
+          animation: type 5s steps(9);
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 4px solid #fff;
+  width: 9ch;
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 9ch;
+  }
+  100% {
+    width: 9ch;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 9ch;
+  }
+  100% {
+    width: 9ch;
+  }
+}
+
+.about-section {
+  background: #f5f5f5;
+  padding: 80px;
+}
+
+.about-section .last-about h1 {
+  margin-top: -5px;
+}
+
+.about-section .last-about .inner {
+  width: 80px;
+  height: 3px;
+  background: #0078FF;
+  margin-top: -10px;
+  margin-bottom: 50px;
+}
+
+.service-section {
+  background: #f5f5f5;
+}
+
+.service-section .service-item {
+  background: #fff;
+  border-radius: 15px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.service-section .service-item:hover span {
+  background: #0078FF;
+  color: #fff;
+  border: 8px solid #91b1c9;
+}
+
+.service-section .service-item span {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 8px solid #0078FF;
+  display: inline-block;
+  font-size: 35px;
+  padding-top: 15px;
+  margin: 20px 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.service-section .service-item p {
+  padding-bottom: 30px;
+}
+
+.service-section .service-item h4 {
+  text-transform: uppercase;
+  color: #3d3c3c;
+}
+
+.Portfolio {
+  background: #f5f5f5;
+}
+
+.Portfolio .head-port .inner-port {
+  width: 70px;
+  height: 4px;
+  background: #0078FF;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.Portfolio .Portfolio-item {
+  overflow: hidden;
+  background: #fff;
+}
+
+.Portfolio .Portfolio-item .work-img img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.Portfolio .Portfolio-item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.Portfolio .Portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Portfolio .Portfolio-item h5 {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.Portfolio .Portfolio-item p {
+  font-size: 14px;
+}
+
+.Portfolio .Portfolio-item p label {
+  color: #0078FF;
+}
+
+.Portfolio .Portfolio-item span i {
+  color: #0078FF;
+  font-size: 20px;
+  margin-top: 30px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #0078FF;
+  border-radius: 50%;
+  margin-top: 35px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+footer {
+  background: #0078FF;
+}
+/*# sourceMappingURL=style.css.map */

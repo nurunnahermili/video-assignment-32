@@ -1,0 +1,331 @@
+.main-section{
+   
+  position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    // background: aqua;
+    z-index: 1;
+    
+    
+    .logo{
+        padding-top: 10px;
+        span{
+            font-size: 25px;
+            font-weight: 600;
+            color: #fff;
+
+        }
+
+    }
+    .menu{
+        padding-top: 15px;
+        ul{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            list-style: none;
+            transition: .4s;
+            li{
+                
+                position: relative;
+                &:hover > ul{
+                    opacity: 1;
+                    visibility: visible;
+
+                }
+               
+                &:hover > a{
+                    border-bottom: 2px solid #fff;
+                 }
+                a{
+                    padding: 15px;
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 16px;
+                    display: block;
+                   
+                  &.active{
+                    border-bottom: 2px solid #fff; 
+                  } 
+
+
+                }
+            
+                ul{
+                  position: absolute;
+                  width: 300px;
+                  padding-top: 30px;
+                  left: -133px;
+                  display: flex;
+                  flex-direction: column;
+                   opacity: 0;
+                   visibility: hidden;
+                   transition: .4s;
+                   
+
+
+                    li{
+                        background: #fff;
+                        // display: inline-block;
+                        flex-grow: 1;
+                        
+                
+                        
+                        &:hover  a{
+                         color:  rgb(20, 34, 231);
+                        }
+                      
+                        a{
+                            color: #000;
+                          
+                         
+                          
+                        }
+                    
+                      ul{
+                          margin-left: 76px;
+                          top: 0;
+                          
+                          li{
+                             
+                              a{
+                                padding-left: -5px;
+
+                              }
+                          }
+                      }
+                    
+                    
+                    }
+
+
+                }
+             
+            
+            
+            }
+        
+         
+        
+        
+        
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.banner{
+    background: url(img/hero-bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 250px;
+    position: relative;
+    .banner-contant{
+   
+        h1{
+
+        }
+        h2{
+            animation: type 5s steps(9); 
+            overflow: hidden;
+            white-space: nowrap;
+            font-family: consolas;
+            border-right: 4px solid #fff;
+            width: 9ch;
+          
+
+         @keyframes type {
+ 
+            0%{
+                width: 0ch;
+               }
+
+               50%{
+                 width: 9ch;  
+               }
+            100%{
+                width: 9ch;
+
+            }
+          }   
+        }
+    
+       
+       
+       
+        
+
+
+    
+    
+    
+    
+    
+    
+    }
+}
+
+// about-section 
+
+
+.about-section {
+    background: #f5f5f5;
+    padding: 80px;
+    .container{
+        
+    }
+
+
+
+
+  .last-about{
+      h1{
+        margin-top: -5px;
+      }
+      .inner{
+          width: 80px;
+          height: 3px;
+          background: #0078FF;
+          margin-top: -10px;
+          margin-bottom: 50px;
+      }
+  }
+
+}
+
+// Services 
+
+.service-section{
+    background: #f5f5f5;
+    
+    .service-item{
+       background: #fff;
+       border-radius: 15px;
+       transition: .4s;
+       &:hover span{
+           background: #0078FF;
+           color: #fff;
+           border: 8px solid #91b1c9;
+       }
+       span{
+           width: 100px;
+           height: 100px;
+           border-radius: 50%;
+           border: 8px solid #0078FF;
+           display: inline-block;
+           font-size: 35px;
+           padding-top: 15px;
+           margin: 20px 0;
+           transition: .4s;
+
+       }
+       p{
+          padding-bottom: 30px;
+
+       }
+       h4{
+           text-transform: uppercase;
+           color: rgb(61, 60, 60);
+
+       }
+   } 
+
+}
+
+// Portfolio 
+
+.Portfolio{
+    background: #f5f5f5;
+    .head-port{
+       h1{
+
+       }
+       p{
+
+       }
+       .inner-port{
+         width: 70px;
+         height: 4px;
+         background: #0078FF;
+         display: inline-block;
+         margin-bottom: 20px;
+       } 
+    }
+
+  .Portfolio-item{
+       overflow: hidden;
+      .work-img img {
+        transition: all 1s;
+       
+       
+      }
+      &:hover img{
+          transform: scale(1.1);
+        //   transform: perspective(500px) scale(1) translate3d(0,0,20px);
+      
+        
+      }
+      img{
+         max-width: 100%;
+         height: auto;
+        
+        
+      }
+
+    
+          background: #fff;
+         h5{
+             margin-top: 20px;
+             text-transform: uppercase;
+
+         }
+         p{
+             font-size: 14px;
+             label{
+                color: #0078FF;
+
+             }
+         }
+         span i{
+            color: #0078FF;
+            font-size: 20px;
+             margin-top: 30px;
+             display: inline-block;
+             width: 35px;
+             height: 35px;
+             border: 3px solid #0078FF;
+             border-radius: 50%;
+             margin-top: 35px;
+             padding-left: 5px;
+             padding-top: 5px;
+            
+            
+            }
+  
+  
+  
+  
+        
+  
+    }
+
+
+
+
+
+
+}
+
+
+footer{
+    background: #0078FF;
+}
